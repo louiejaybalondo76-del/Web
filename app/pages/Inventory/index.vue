@@ -14,6 +14,16 @@
       ></v-text-field>
     </template>
 
+<!-- Selectable inventory -->
+    <v-select
+  clearable
+  label="Select"
+  :items="category.data"
+  item-title="category_name"
+  item-value="id"
+  variant="outlined"
+></v-select>
+
     <v-data-table
       :headers="headers"
       :items="category.data"
@@ -25,7 +35,11 @@
 <script setup>
   import { ref } from 'vue'
   const search = ref('')
-  const { data: category } = await useFetch('http://localhost:1337/api/inventories');
+
+  const { data: category } = await useFetch('http://localhost:1337/api/inventories?populate=category');
+
+  const { data: inventory } = await useFetch('http://localhost:1337/api/categories');
+
   const headers = [
     { key: 'product_name', title: 'Product Name' },
     { key: 'product_description', title: 'Prodcut Description' },
