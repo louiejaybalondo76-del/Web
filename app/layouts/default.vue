@@ -19,7 +19,7 @@ prepend-avatar="https://i.pinimg.com/originals/16/78/06/16780663b8511b3e2ff84d62
         <v-divider></v-divider>
 
         <v-list density="compact" nav>
-          <v-list-item to="/" prepend-icon="mdi mdi-view-dashboard" title="Dashboar" value="dashboard"></v-list-item>
+          <v-list-item to="/" prepend-icon="mdi mdi-view-dashboard" title="Dashboard" value="dashboard"></v-list-item>
           <v-list-item to="/Inventory" prepend-icon="mdi mdi-list-box" title="Inventory" value="inventory"></v-list-item>
           <v-list-item to="/Category"prepend-icon="mdi mdi-account-group-outline" title="Category" value="category"></v-list-item>
           <v-list-item to="/Users"prepend-icon="mdi mdi-account-group-outline" title="Users" value="user"></v-list-item>
