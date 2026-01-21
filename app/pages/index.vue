@@ -3,16 +3,17 @@
     
     
     <v-card
-      class="mx-auto pa-12 pb-8"
+      class="mx-auto pa-12 pb-8 "
       elevation="8"
       max-width="448"
       rounded="lg"
+      
     >
-    <!--v-img
+    <v-img
       class="mx-auto my-6"
-      max-width="228"
-      src="https://cdn.vuetifyjs.com/docs/images/logos/vuetify-logo-v3-slim-text-light.svg"
-    ></v-img>-->
+      max-width="500"
+      src="https://static.vecteezy.com/system/resources/previews/005/050/797/original/library-logo-template-design-free-vector.jpg"
+    ></v-img>
       <div class="text-subtitle-1 text-medium-emphasis">Account</div>
 
       <v-text-field
@@ -26,7 +27,7 @@
         Password
 
         <a
-          class="text-caption text-decoration-none text-blue"
+          class="text-caption text-decoration-none text-grey-darken-4"
           href="#"
           rel="noopener noreferrer"
           target="_blank"
@@ -49,7 +50,7 @@
         color="surface-variant"
         variant="tonal"
       >
-        <v-card-text class="text-medium-emphasis text-caption">
+        <v-card-text class="text-grey-darken-4 text-caption">
           Warning: After 3 consecutive failed login attempts, you account will be temporarily locked for three hours. If you must login now, you can also click "Forgot login password?" below to reset the login password.
         </v-card-text>
       </v-card>
@@ -57,7 +58,7 @@
       <v-btn 
         to="/dashboard"
         class="mb-8"
-        color="blue"
+        color="grey-darken-4"
         size="large"
         variant="tonal"
         block
@@ -67,7 +68,7 @@
 
       <v-card-text class="text-center">
         <a
-          class="text-blue text-decoration-none"
+          class="text-grey-darken-4 text-decoration-none"
           href="#"
           rel="noopener noreferrer"
           target="_blank"
